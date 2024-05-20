@@ -4,62 +4,12 @@ Material for R sessions, Dataharvest 2024
 The European Pollutant Release and Transfer data files are too big to upload to this repo. You need to download them from [this link](https://sdi.eea.europa.eu/data/63a14e09-d1f5-490d-80cf-6921e4e69551) The two files you need from the huge .zip file (sorry) are F1_4 and F2_4. 
 
 
-Tidyverse for Journalists 2024
-AUTHOR
-Jonathan Stoneman
+Below is the lesson material for the sessions
 
 R Tidyverse for Journalists {1:3}
 This version of our introduction was created to support our three sessions at Dataharvest 2024. Documentation and the files used in the session are available at the github repo - https://github.com/Stonepeople/DH24
 
 In order to make the session easy to join without having to install a lot of software in a short time, we created a cloud version of the material needed to follow the sessions, complete with the necessary data. This project will remain active for the foreseeable future, and so you can continue to use R and the Tidyverse packages we have installed for you until you decide you want to install R and RStudio on your own hard drive.
-
-The link to the cloud version of the project is
-
-HERE (you will need to create a posit.cloud account, but you don’t need to pay for it)
-
-Installing R and RStudio
-When you get to the point where you want to run R and RStudio on your own computer, you will need to
-
-download and install R from: https://cloud.r-project.org
-
-download and install R Studio from: https://posit.co/download/rstudio-desktop/
-
-Why do you need RStudio? If R is the engine, then RStudio is the dashboard and controls - that is, you could run an engine by hand with the hood up, but you would probably prefer to run it from a nice user-friendly control panel, like RStudio!
-
-Your screen
-
-
-The standard layout (background colour may be different - you can change yours with Tools>Global options >Appearance and choose one you like. This dark background is called Cobalt.
-
-You will see 4 panes within your screen
-
-Top left is the script - you write instructions and comments in a script, which you can save and re-run at any time.
-
-Bottom left is the Console - that’s where your instructions are carried out. You can write code in the Console directly, but it isn’t saved in a way which is easy to re-use it. So most often you will click “Run” on a few lines of code, and watch them being carried out in the Console. Any error messages will appear there.
-
-Top right - is the Environment (and a couple of other tabs we don’t need right now) That’s where you dataframes will appear, along with any “values” you store - urls, or other “objects” you need to save in the temporary memory.
-
-Bottom right - several important tabs - the list of packages installed on your computer (or in the cloud project you’re using), the files in your project, the help pages, and any plots you make.
-
-Projects
-The word project sounds a bit grand, and self-important. In fact, keeping files and scripts together in a project is the easiest way to keep on top of everything you’re doing: a project is simply a folder, where you keep together all the data, the scripts, the plots and anything else you need.
-
-(When I started using R I made the mistake of thinking I didn’t need a project - I was “just learning R” - I soon ended up with a folder full of files, scripts, datasets, and the odd plot…I couldn’t remember what went with what. I soon realised that projects were the way to go!)
-
-Packages
-A vital element of being an R user is access to the enormous range of packages which you can use to do various jobs (more than 20000 at the time of writing).
-
-Packages are created by various R users, and, after testing and adoption by the R project, are documented and maintained by the community. Packages are, in effect, apps or mini-programs. Some do one specific job, others are built to carry out a range of tasks, such as importing data, cleaning it, making visualisations, etc.
-
-If you look at your package pane (bottom right of screen) you will see two lists - the System Library (basic packages which come pre-installed in R and make it work, and carry out some frequent tasks) and the User Library (the packages that you have installed).
-
-Some packages are recommended to you - like the Tidyverse, right now: you will come across others as you continue your R journey. Some packages rely on others to work - these are known as “dependencies”.
-
-When installing new packages, if you use the GUI method of adding new packages it’s worth making sure the dependencies option is ticked. If you don’t, then you will get warning messages about missing packages when you try to use them. It’s not a big problem - you can install them anytime, it’s just a little frustrating if it keeps happening when you’re starting out.
-
-We are going to use a group of packages known collectively as the “tidyverse”. The tidyverse is a group of about 20 packages - and it’s helpful to run them under one generic name instead of having to remember what task each one does, and loading it separately.
-
-You install a package once, but you run it in every session when you need it: think of apps on a phone - you buy and install an app once but click on them to run them when you actually need.
 
 Writing our first lines of code
 To get started, we now need to run the tidyverse, and then import some data to work with.
